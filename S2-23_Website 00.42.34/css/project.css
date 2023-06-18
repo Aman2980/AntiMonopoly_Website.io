@@ -1,0 +1,136 @@
+.projectCaption {
+    color: #ADBAC7;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.sliderContainer {
+    overflow: hidden;
+    margin: 150px 20px;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    gap: 4rem;
+}
+
+.slides > div {
+    margin-bottom: 40px;
+    flex-shrink: 0;
+    width: 495px;
+    height: 650px;
+    border-radius: 30px;
+    border: 7px solid rgba(255, 255, 255, 0.74);
+    background: rgba(255, 255, 255, 0.08);
+    transition: transform 0.5s;
+    padding: 20px; /* Added for better spacing */
+    box-shadow: 5px 5px 10px #3e8bb7;
+}
+
+.slides h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px; /* Added for spacing between h2 and content */
+}
+
+.slides ul {
+    margin-top: 10px; /* Added for spacing between h2 and ul */
+    text-align: center;
+}
+
+.slides li {
+    margin-bottom: 10px;
+    line-height: 1.25em;
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2em;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.slides li.first {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ADBAC7;
+    -webkit-text-fill-color: initial; /*to restore the text color for li.first */
+}
+
+
+@media (max-width: 768px) {
+    .slides > div {
+        width: 400px;
+    }
+
+    .sliderContainer {
+        margin-bottom: 150px;
+    }
+
+    .slides {
+        gap: 2rem;
+    }
+
+    .slides > div {
+        border-width: 5px;
+        box-shadow: none;
+    }
+
+    .slides h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .slides > div {
+        width: 350px;
+    }
+
+    .slides h2 {
+        font-size: 1.5em;
+    }
+
+    .projectCaption {
+        color: #ADBAC7;
+        font-size: 1.4rem;
+        margin: 25px auto;
+        text-align: center;
+        width: 100%;
+        transition: all 0.3s;
+    }
+}
+
+.pdfContainer {
+    margin: 140px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.pdf {
+    width: 100%;
+    max-width: 600px;
+    height: 750px;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.87);
+}
+
+
+@media only screen and (max-width: 650px) {
+    .pdf {
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .pdf {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,154 @@
+.headingWelcome {
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+
+@media screen and (max-width: 600px) {
+    .headingWelcome {
+        margin-top: 90px;
+        font-size: 3rem;
+        transition: all 0.3s;
+    }
+
+}
+
+form {
+    margin: 200px 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    padding: 30px;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.87);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3e8bb7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+form input {
+    width: 150px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.19);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.submitStats {
+    display: block;
+    width: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #A77BF3;
+    color: #93F5EC;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.submitStats:hover {
+    background-color: #93F5EC;
+    color: #A77BF3;
+    cursor: pointer;
+}
+
+#win {
+    width: 30px;
+    height: 60px;
+    border-radius: 70%;
+}
+
+#dataContainer {
+    margin: 0 auto;
+    height: 450px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#dataContainer {
+    margin-bottom: 100px;
+}
+
+.game-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.22);
+}
+
+
+.game-table th {
+    position: sticky; /* Make the <th> sticky */
+    top: 0; /* Position it at the top */
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 15px 15px;
+    text-align: left;
+    border-bottom: 2px solid #A77BF3;
+}
+
+.game-table td {
+    color: white;
+    padding: 16px;
+    text-align: left;
+    border-bottom: .5px dashed #93F5EC;
+}
+
+.game-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 768px) {
+    .game-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    form {
+        margin: 150px 50px;
+    }
+
+    form input {
+        font-size: 1.1em;
+    }
+
+    .submitStats {
+        width: 90px;
+    }
+}
+
+
+
+

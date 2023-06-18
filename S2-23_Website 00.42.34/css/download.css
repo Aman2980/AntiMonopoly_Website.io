@@ -1,0 +1,185 @@
+.downloadHeader {
+    position: fixed;
+    z-index: 1;
+    background-image: url(../assets/screenshots/game/monoMan3.png);
+    width: 100%;
+    height: 95vh;
+    background-position: center center;
+}
+
+
+.contentContainer {
+    position: absolute;
+    margin-top: 100vh;
+    z-index: 2;
+    width: 100%;
+    float: left;
+    background: linear-gradient(180deg, #22272E 0%, #22272E 40%, #000000 98%);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.87);
+}
+
+.descrBtns {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+
+.descrCaption {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 2em;
+}
+
+
+.video-wrapper {
+    margin: 10% 0;
+    width: 100%;
+    float: left;
+}
+
+.gameVideo {
+    display: none;
+}
+
+.video {
+    aspect-ratio: auto;
+    width: 80%;
+    max-width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    border-radius: 30px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.87);
+    border: 1px solid #93F5EC;
+}
+
+.downloadSection {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.subTitle {
+    width: 100%;
+    margin-top: 250px;
+    text-align: center;
+    font-size: 3em;
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.text {
+    font-size: 2em;
+    margin: 0 0 40px 0;
+    color: #ADBAC7;
+    font-weight: normal;
+}
+
+.downloadBox {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.87);
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    background-color: #2D333B;
+    border: #A77BF3 3px solid;
+    border-radius: 30px;
+    width: 30%;
+}
+
+
+.btn {
+    cursor: pointer;
+    padding: 15px 45px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: #A77BF3;
+    color: #93F5EC;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+    box-shadow: 0 8px #999;
+}
+
+
+.btn:nth-child(1) {
+    padding: 24px 38px;
+}
+
+.btn:nth-child(2) {
+    padding: 24px 34px;
+}
+
+
+/* apply these color changes when hover over a button */
+.btn:hover {
+    background-color: #93F5EC;
+    color: #A77BF3;
+}
+
+/* when button clicked, changed the shadow and move it y-axis by 4px */
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+@media only screen and (max-width: 450px) {
+    .descrBtns {
+        margin: 40px auto;
+        gap: 15px;
+    }
+
+    .descrBtns {
+        margin-bottom: -100px;
+    }
+
+    .text {
+        font-size: 1.6em;
+        margin: 0 0 45px auto;
+    }
+
+
+    .btn:nth-child(1) {
+        padding: 15px 24px;
+    }
+
+    .btn:nth-child(2) {
+        padding: 15px 24px;
+    }
+
+
+    .downloadBox {
+        margin-bottom: 150px;
+        padding: 25px;
+        width: 30%;
+    }
+    .subTitle {
+        font-size: 2.7em;
+    }
+    .descrCaption {
+        width: 100%;
+        margin:  50px auto;
+        font-size: 1.5em;
+    }
+
+}
+
+.downloadHeader{
+    background-position: center -300px;
+}
+
+.contentContainer {
+    margin-top: 75vh;
+}
+

@@ -1,0 +1,141 @@
+.aboutCaption {
+    color: #ADBAC7;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: justify;
+    text-justify: inter-character;
+    width: 80%;
+    margin: 40px auto;
+    transition: all 0.3s;
+}
+
+.word {
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading-below {
+    color: #ADBAC7;
+    font-size: 3rem;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.containerAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0 2rem;
+    width: 93.5%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    margin: 5% 0;
+    width: 100%;
+    transition: all 0.7s;
+}
+
+
+.card {
+    overflow: hidden;
+    background: #333842;
+    border-radius: 30px;
+    text-align: right;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(227, 235, 246, 0.3);
+    transform: translateY(-30px);
+
+}
+
+
+.card_img img {
+    width: 100%;
+    height: 350px; /* set a fixed height */
+    object-fit: cover; /* to avoid stretching or distortion of the image */
+    border-radius: 20px;
+}
+
+
+.card_body {
+    padding: 30px 10px 25px 10px;
+}
+
+.card_title {
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.designation {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ADBAC7;
+}
+
+.caption {
+    line-height: 1.6;
+    padding: 10px;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 23px;
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 3%;
+        transition: all 0.3s;
+    }
+
+    .containerAbout {
+        padding: 0 0.79rem;
+    }
+
+    .card_body {
+        padding: 30px 10px 130px 10px;
+    }
+
+    .card_title {
+        font-size: 32px;
+    }
+
+    .designation {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .containerAbout {
+        margin-bottom: 200px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,189 @@
+main {
+    width: 100%;
+}
+
+.section1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.heroImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    transition: all 0.25s;
+}
+
+.gameHeading {
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    opacity: 0;
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@media (min-width: 281px) and (max-width: 481px) {
+    .gameHeading {
+        font-size: 3rem;
+        transition: all 0.3s;
+        top: 7vh;
+    }
+
+
+    .gameInfo {
+        padding: 0 40px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .gameHeading {
+        font-size: 3.3rem;
+        transition: all 0.3s;
+        top: 10vh;
+    }
+
+    .section1 {
+        height: 25vh;
+    }
+
+
+    .gameInfo {
+        padding: 0 50px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .gameHeading {
+        top: 10vh;
+    }
+
+
+    .section1 {
+        height: 25vh;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 650px) {
+    .gameHeading {
+        top: 12vh;
+    }
+
+
+    .section1 {
+        height: 30vh;
+    }
+
+}
+
+@media (min-width: 650px) and (max-width: 769px) {
+
+    .gameHeading {
+        top: 16vh;
+    }
+
+    .section1 {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gameHeading {
+        font-size: 5rem;
+        transition: all 0.3s;
+        top: 20vh;
+    }
+
+    .section1 {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1025px) {
+    .gameHeading {
+        font-size: 6rem;
+        transition: all 0.3s;
+    }
+
+    .section1 {
+        height: 70vh;
+    }
+
+}
+
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.section2 {
+    width: 100%;
+    position: relative;
+}
+
+
+.intro {
+    margin-top: 20%;
+    padding: 60px;
+    font-size: 3rem;
+    text-align: center;
+    color: #ADBAC7;
+}
+
+
+.gameInfo {
+    margin-top: 3%;
+    text-align: justify;
+    text-justify: inter-character;
+    font-size: 1.5rem;
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2;
+    padding: 0 100px;
+    min-height: 40vh;
+}
+
+@media screen and (max-width: 600px) {
+    .gameInfo {
+        line-height: 1.5;
+        padding: 0 30px;
+    }
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom .monoMan {
+    width: 400px;
+    height: auto;
+    transition: all 0.7s;
+    filter: drop-shadow(5px 5px 100px #3e8bb7);
+}
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="icon" type="favicon" href="../assets/favicon/infinity2.png">
+    <script defer src="../js/dynamicCode.js"></script>
+    <script type="module" src="../js/login.js"></script>
+</head>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="logo"><img class="logo" src="../assets/logo/logo5.png" alt="monopoly man image "></a>
+            <ul class="nav-menu" id="main-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="project.html" class="nav-link">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a href="download.html" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link active">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <img class="heroImage" src="../assets/screenshots/game/hero8.jpg" alt="hero image">
+    <h1 class="heading">LOGIN</h1>
+    <h5 class="projectCaption">Unlock Your World: Login to Discover Limitless Possibilities</h5>
+    <div class="login-container">
+        <fieldset class="login-form">
+            <legend><h2>WELCOME</h2></legend>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input class="hidden incorrect correct " type="password" id="password" name="password"
+                           placeholder="Enter your password" required>
+                    <span class="errorMessage"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </fieldset>
+        <img class="monoMan" src="../assets/screenshots/game/monopolistMan.png" alt="monopoly man image ">
+    </div>
+    <div class="wave">
+        <div class="ball" style="background-color: #93F5EC;"></div>
+        <div class="ball" style="background-color: #A77BF3;"></div>
+        <div class="ball" style="background-color: #93F5EC;"></div>
+        <div class="ball" style="background-color: #A77BF3;"></div>
+        <div class="ball" style="background-color: #93F5EC;"></div>
+        <div class="ball" style="background-color: #A77BF3;"></div>
+        <div class="ball" style="background-color: #93F5EC;"></div>
+    </div>
+</main>
+<footer>
+    <p> TEAM23 - ALL RIGHTS RESERVED</p>
+</footer>
+</html>

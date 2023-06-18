@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/userStats.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="icon" type="favincon" href="../assets/favicon/infinity2.png">
+    <script defer src="../js/login.js"></script>
+    <script defer src="../js/userName.js"></script>
+    <script defer src="../js/dynamicCode.js"></script>
+    <script type="module" src="../js/login.js"></script>
+    <script defer src="../js/userStats.js" type="module"></script>
+</head>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="logo"><img class="logo" src="../assets/logo/logo5.png" alt="monopoly man image "></a>
+            <ul class="nav-menu" id="main-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="download.html" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+        <form>
+            <label for="id">ID:</label>
+            <input type="number" id="id" name="id">
+
+            <label for="player-name">Player Name:</label>
+            <input type="text" id="player-name" name="player-name">
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="role">
+
+            <label for="score">Score:</label>
+            <input type="number" id="score" name="score">
+
+            <label for="balance">Balance:</label>
+            <input type="number" id="balance" name="balance">
+
+            <label for="win">Win:</label>
+            <input type=checkbox id="win" name="win">
+
+            <button class="submitStats">Submit</button>
+        </form>
+    <div id="dataContainer"></div>
+</main>
+<footer>
+    <p> TEAM23 - ALL RIGHTS RESERVED</p>
+</footer>
+</html>

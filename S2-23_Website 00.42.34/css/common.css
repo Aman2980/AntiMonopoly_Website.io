@@ -1,0 +1,218 @@
+/*removes default margin and padding from the slides*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 60px;
+    background: linear-gradient(180deg, #22272E 0%, #22272E 40%, #000000 98%);
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2D333B;
+    z-index: 999;
+}
+
+
+.navbar {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #CDD9E5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1224px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.nav-link:hover {
+    color: #a6b1b9;
+    border-bottom: 5px solid #93F5EC;
+    padding-bottom: 12.5px;
+}
+
+.nav-link.active {
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: #FFF;
+    background-color: #A77BF3;
+}
+
+.nav-link.stats {
+    visibility: hidden;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/*Custom scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(32, 38, 42, 0.8);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: -webkit-linear-gradient(300deg, #93F5EC 0%, #A77BF3 30%);
+}
+
+/*display property of the hamburger menu to block when the screen is smaller than or equal to 800px*/
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+
+    /*changes the three bars that make up the hamburger menu icon to create an "X" shape */
+    /*uses nth-child to select the 3 spans (hamburger menu)*/
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    /*when the hamburger menu has an active class, which is added when the user clicks on the menu*/
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /*menu is off the screen and hidden until the user clicks on the hamburger menu*/
+    /*The transition property adds a smooth animation effect to the menu sliding in and out*/
+    .nav-menu {
+        overflow-x: hidden;
+        transition: 0.6s;
+        position: fixed;
+        z-index: 0;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        width: 60%;
+        background: hsla(0, 0%, 100%, 0.18);
+        height: 100%;
+        border-left: 12px solid rgba(255, 255, 255, 0.44);
+        justify-content: start;
+        padding-top: 75px;
+        gap: 60px;
+        backdrop-filter: blur(1rem);
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 23px;
+
+    }
+
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    /*menu to slide in from the right side of the screen when in active state*/
+    .nav-menu.active {
+        right: 0;
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #2D333B;
+    min-height: 5vh;
+    align-items: center;
+    justify-content: center;
+    color: #ADBAC7;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.heading {
+    background: -webkit-linear-gradient(300deg, #93F5EC 20%, #A77BF3 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    margin-top: 80px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        margin-top: 90px;
+        font-size: 3rem;
+        transition: all 0.2s;
+    }
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+
+
